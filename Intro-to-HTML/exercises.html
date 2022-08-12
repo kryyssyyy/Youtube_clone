@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercises</title>
+    <style>
+      .firstname {
+        border-radius: 4px;
+        border: 1px solid;
+        border-color: rgb(160, 160, 160);
+        padding: 8px 8px;
+      }
+      .lastname {
+        border-radius: 4px;
+        border: 1px solid;
+        border-color: rgb(160, 160, 160);
+        padding: 8px 8px;
+      }
+      .email {
+        border-radius: 4px;
+        border: 1px solid;
+        display: block;
+        margin-top: 5px;
+        border-color: rgb(160, 160, 160);
+        padding: 8px 8px;
+        width: 354px;
+      }
+      .signupbutton {
+        border-radius: 4px;
+        border: none;
+        margin-top: 5px;
+        padding: 8px 8px;
+        width: 372px;
+        color: white;
+        background-color: rgb(15, 77, 170);
+        font-weight: bold;
+      }
+
+      .fb {
+        margin-top: 20px;
+        font-family: Arial;
+      }
+      .addfriend {
+        display: inline-block;
+        margin-right: 20px;
+        box-shadow: 1px 1px 5px grey;
+        padding-bottom: 10px;
+      }
+      .addfriend > img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        vertical-align: top;
+        margin-bottom: 0px;
+      }
+      .name {
+        font-weight: bold;
+        font-size: 13px;
+        margin-left: 7px;
+        margin-bottom: 5px;
+        margin-top: 8px;
+      }
+      .mutual {
+        font-size: 11px;
+        margin-left: 7px;
+        margin-top: 0px;
+        color: grey;
+      }
+      .addbutton {
+        margin-left: 7px;
+        background-color: rgb(53, 112, 240);
+        color: white;
+        border: none;
+        border-radius: 3px;
+        padding: 8px 10px;
+        font-size: 11px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <input class="firstname" type="text" placeholder="First Name" />
+    <input class="lastname" type="text" placeholder="Last Name" />
+    <input class="email" type="text" placeholder="Email" />
+    <button class="signupbutton">Sign up</button>
+    <div class="fb">
+      <div class="addfriend">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL23rMw3VFygavMYZt2eVeUeY4MVjSHrmuHQ&usqp=CAU"
+          alt="dog"
+        />
+        <p class="name">Lloyd</p>
+        <p class="mutual">1 mutual friend</p>
+        <button class="addbutton">Add Friend</button>
+      </div>
+      <div class="addfriend">
+        <img
+          src="https://pbs.twimg.com/media/E74aR80UUAUXf-R.jpg:large"
+          alt="dog"
+        />
+        <p class="name">Sad boi</p>
+        <p class="mutual">10 mutual friends</p>
+        <button class="addbutton">Add Friend</button>
+      </div>
+      <div class="addfriend">
+        <img
+          src="https://i.pinimg.com/736x/b8/0f/70/b80f70409611cbb9ec27aecd96c59f4e.jpg"
+          alt="dog"
+        />
+        <p class="name">Tikboy</p>
+        <p class="mutual">1000 mutual friends</p>
+        <button class="addbutton">Add Friend</button>
+      </div>
+    </div>
+  </body>
+</html>
