@@ -9,6 +9,7 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 100;
 
     background-color: white;
     border-bottom-width: 1px;
@@ -113,6 +114,29 @@
 
 .notifications-icon {
     height: 24px;
+}
+
+.notification-icon-container {
+    position: relative;
+
+}
+
+.notifications-count {
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    /* we use negative value to move it beyond the relative element*/
+    font-family: roboto, arial;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+
+    background-color: rgb(190, 7, 7);
+    color: white;
+
 }
 
 .current-user-picture {

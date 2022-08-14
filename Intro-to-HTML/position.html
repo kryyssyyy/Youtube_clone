@@ -14,6 +14,7 @@
         left: 0;
         right: 0;
         height: 50px;
+        
        
         ">
             header
@@ -26,23 +27,60 @@
         bottom:0;
         top:50px;
         width: 72px;
-
-
         ">
             sidebar
+            <div style="
+            position: absolute; 
+            background-color: red;
+            color: white;
+            right: 0px;
+            top:0px;
+            ">
+            <!--if absolute element is inside a fixed element, it will be relative
+            to the position of the fixed element-->
+            X
+            </div>
         </div>
+
+
+        <div style="
+            position: absolute; 
+            background-color: red;
+            color: white;
+            right: 10px;
+            top:60px;
+
+            ">
+            <!--absolute is placed on the page (ung buong page ng website )while fixed is 
+                placed in the browser window(ung window na nakikita sa browser)-->
+                absolute
+        </div>
+
         <div style="background-color:lightblue;
-        height: 200px;
-        width: 200px;
-        position: static;
-        ">
-            div 1
+            height: 200px;
+            width: 200px;
+            position: static;
+            ">
+                div 1
         </div>
         <div style="background-color:lightpink;
-        height: 200px;
-        width: 200px;
-        ">
-            div 2
+            height: 200px;
+            width: 200px;
+            position:relative;
+            ">
+                div 2
+                <div style="
+                position: absolute; 
+                background-color: black;
+                color: white;
+                right: 10px;
+                bottom:10px;
+    
+                ">
+                <!--if absolute element is inside a relative element, it will be relative
+             to the position of the relative element-->
+                    5:00
+                </div>
         </div>
     </body>
 </html>
