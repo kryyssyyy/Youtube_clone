@@ -35,21 +35,32 @@
         font-weight: bold;
       }
 
-      .fb {
+      .fb-grid{
         margin-top: 20px;
         font-family: Arial;
+        box-shadow: 1px 1px 5px;
+        padding: 15px 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 30px;
+        
+        
+        
       }
-      .addfriend {
-        display: inline-block;
-        margin-right: 20px;
+      .addfriend-c {
         box-shadow: 1px 1px 5px grey;
         padding-bottom: 10px;
+        width: 150px ;
       }
-      .addfriend > img {
-        width: 120px;
-        height: 120px;
+      .pic-c{
+        width: 150px;
+        height: 150px;
+      }
+      .pic-c > img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
-        vertical-align: top;
         margin-bottom: 0px;
       }
       .name {
@@ -82,30 +93,71 @@
     <input class="lastname" type="text" placeholder="Last Name" />
     <input class="email" type="text" placeholder="Email" />
     <button class="signupbutton">Sign up</button>
-    <div class="fb">
-      <div class="addfriend">
-        <img
+    <div class="fb-grid">
+      <div class="addfriend-c">
+        <div class="pic-c">
+          <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL23rMw3VFygavMYZt2eVeUeY4MVjSHrmuHQ&usqp=CAU"
-          alt="dog"
-        />
+          alt="dog"/>
+        </div>
+        
         <p class="name">Lloyd</p>
         <p class="mutual">1 mutual friend</p>
         <button class="addbutton">Add Friend</button>
       </div>
-      <div class="addfriend">
-        <img
+      <div class="addfriend-c">
+        <div class="pic-c">
+          <img
           src="https://pbs.twimg.com/media/E74aR80UUAUXf-R.jpg:large"
-          alt="dog"
-        />
+          alt="dog"/>
+        </div>
         <p class="name">Sad boi</p>
         <p class="mutual">10 mutual friends</p>
         <button class="addbutton">Add Friend</button>
       </div>
-      <div class="addfriend">
-        <img
+      <div class="addfriend-c">
+        <div class="pic-c">
+          <img
           src="https://i.pinimg.com/736x/b8/0f/70/b80f70409611cbb9ec27aecd96c59f4e.jpg"
-          alt="dog"
-        />
+          alt="dog"/>
+        </div>
+        
+        <p class="name">Tikboy</p>
+        <p class="mutual">1000 mutual friends</p>
+        <button class="addbutton">Add Friend</button>
+      </div>
+
+      <div class="addfriend-c">
+        <div class="pic-c">
+          <img
+          src="https://i.pinimg.com/736x/b8/0f/70/b80f70409611cbb9ec27aecd96c59f4e.jpg"
+          alt="dog"/>
+        </div>
+        
+        <p class="name">Tikboy</p>
+        <p class="mutual">1000 mutual friends</p>
+        <button class="addbutton">Add Friend</button>
+      </div>
+
+      <div class="addfriend-c">
+        <div class="pic-c">
+          <img
+          src="https://i.pinimg.com/736x/b8/0f/70/b80f70409611cbb9ec27aecd96c59f4e.jpg"
+          alt="dog"/>
+        </div>
+        
+        <p class="name">Tikboy</p>
+        <p class="mutual">1000 mutual friends</p>
+        <button class="addbutton">Add Friend</button>
+      </div>
+
+      <div class="addfriend-c">
+        <div class="pic-c">
+          <img
+          src="https://i.pinimg.com/736x/b8/0f/70/b80f70409611cbb9ec27aecd96c59f4e.jpg"
+          alt="dog"/>
+        </div>
+        
         <p class="name">Tikboy</p>
         <p class="mutual">1000 mutual friends</p>
         <button class="addbutton">Add Friend</button>
