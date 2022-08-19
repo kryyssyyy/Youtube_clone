@@ -9,7 +9,7 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .video-author,
@@ -22,7 +22,7 @@
     margin-bottom: 4px;
 }
 
-.video-preview {}
+
 
 .video-info-grid {
     display: grid;
@@ -30,12 +30,12 @@
 }
 
 .profilepicture {
-    width: 40px;
+    width: 36px;
     border-radius: 50px;
 }
 
 .thumbnail-row {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     position: relative;
 }
 
@@ -60,4 +60,58 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 16px;
     row-gap: 40px;
+}
+
+.channel-picture {
+    position: relative;
+}
+
+.channel-tooltip {
+    background-color: white;
+    position: absolute;
+    opacity: 1;
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 3px;
+    height: 100px;
+    width: 280px;
+    bottom: -60px;
+
+    display: flex;
+    flex-direction: row;
+    pointer-events: none;
+    transition: opacity 0.08s;
+    z-index: 200;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+
+
+}
+
+.profilepicture-container:hover .channel-tooltip {
+    opacity: 1;
+}
+
+.channel-picture-tooltip {}
+
+.profilepicture-tooltip {
+    width: 50px;
+    border-radius: 40px;
+
+}
+
+.channel-name-tooltip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.video-author-tooltip,
+.video-subs-tooltip {
+    flex: 1;
+
 }
