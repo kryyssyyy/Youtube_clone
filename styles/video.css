@@ -96,11 +96,6 @@
     opacity: 1;
 }
 
-.profilepicture:hover .channel-tooltip {
-    opacity: 1;
-}
-
-.channel-picture-tooltip {}
 
 .profilepicture-tooltip {
     width: 50px;
@@ -135,4 +130,22 @@
 .video-subs-tooltip {
     margin-top: 0px;
     line-height: 0px;
+}
+
+@media (max-width:750px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (mid-width: 751px) and (max-width:999px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width:1000px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
